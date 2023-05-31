@@ -26,7 +26,7 @@ function CreateProposalActions(props: CreateProposalActionsType) {
   const [isWaitResponse, setIsWaitResponse] = useState(false);
 
   const durationOptions = [
-    { value: 0, text: "Duration:" },
+    { value: 0, text: "Select duration" },
     { value: 86400, text: "1d" },
     { value: 259200, text: "3d" },
     { value: 432000, text: "5d" },
@@ -110,9 +110,9 @@ function CreateProposalActions(props: CreateProposalActionsType) {
 
   return (
     <>
-      <div className="app-widget">
-        <div className="app-widget-header">Actions</div>
-        <div className="p-1">
+      <div className="proposalActionsWrapper">
+        <h3 className="proposalActionsTitle">Actions</h3>
+        <div>
           <div className="mb-1">
             <DropDown
               handleChange={handleDurationChange}

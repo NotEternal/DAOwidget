@@ -36,12 +36,12 @@ function Proposals() {
   return (
     <div className="app-page proposals">
       <div className="proposals-header">
-        <h1>Proposals</h1>
+        <h2>Proposals</h2>
       </div>
       {isLoading ? (
         <h3>Loading...</h3>
-      ) : !!proposals.length ? (
-        renderedProposalList
+      ) : proposals.length ? (
+          renderedProposalList
       ) : (
         <>
           <h3>Let's create your first proposal</h3>

@@ -8,9 +8,12 @@
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border-color);
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-background-module);
+  color: var(--color-text-primary);
+  transition: var(--transition-duration);
 
   a {
     color: inherit; /* blue colors for links too */
@@ -24,8 +27,12 @@
 
     .proposal-state {
       padding: 0.5rem;
-      border: 1px solid var(--border-color);
-      border-radius: 2rem;
+      border-radius: 8px;
+      text-transform: uppercase;
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--color-brand);
+      border: 1px solid var(--color-brand);
     }
   }
 
@@ -35,26 +42,18 @@
 
     h2 {
       margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 24px;
     }
 
     .body-description {
       color: var(--text-color);
-      font-size: 1.25rem;
+      font-size: 18px;
       margin: 0;
     }
   }
 
   &:hover {
-    border-color: var(--link-color);
-
-    .proposal-header {
-      color: var(--link-color);
-    }
-
-    .proposal-body {
-      .body-description {
-        color: var(--link-color);
-      }
-    }
+    background-color: var(--color-background-interactive);
   }
 }

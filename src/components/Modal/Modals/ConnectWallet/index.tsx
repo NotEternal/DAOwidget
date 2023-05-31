@@ -86,7 +86,7 @@ function ConnectWallet() {
       }
       style={{ width: "auto" }}
     >
-      {account ? shortEVMAddress(account) : "Connect Wallet"}
+      {account ? shortEVMAddress(account) : "Connect"}
     </button>
   );
 }

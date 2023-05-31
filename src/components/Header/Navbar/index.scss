@@ -1,17 +1,28 @@
 .navbar {
   display: flex;
+  align-items: center;
 }
 
 .navbar-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  color: inherit;
+  padding: 8px 12px;
+  color: var(--color-text-secondary);
   text-decoration: inherit !important; /* no underline */
   outline: none;
+  border-radius: 12px;
+  line-height: 24px;
 
   &.active {
-    color: var(--link-color);
+    color: var(--color-text-primary);
+  }
+
+  &:hover {
+    background-color: var(--color-state-overlay-hover);
+  }
+
+  &:not(:last-child) {
+    margin-right: 6px;
   }
 }

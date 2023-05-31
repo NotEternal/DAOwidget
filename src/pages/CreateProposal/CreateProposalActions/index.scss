@@ -1,21 +1,35 @@
+.proposalActionsWrapper {
+}
+
+.proposalActionsTitle {
+  margin: 0 0 16px !important;
+}
+
 .actionDropdown {
+  appearance: none;
   display: flex;
   justify-content: center;
-  background-color: transparent;
-  border: solid 1px var(--border-color);
-  border-radius: 1rem;
+  border: solid 1px var(--color-inactive-border);
+  background-color: var(--color-background-module);
+  border-radius: 12px;
   padding: 1rem;
   margin-bottom: 0.5rem;
-  color: var(--link-color);
   font-weight: 600;
   width: 100%;
   cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: inherit;
 
   &:hover {
-    border-color: var(--link-color);
+    border-color: var(--border-color)
   }
 
   option {
     color: black;
+    font-size: 16px;
+    border: 1px solid red;
+    padding: 8px;
   }
 }

@@ -19,7 +19,7 @@ function Navbar() {
         id={`create-proposal-nav-link`}
         to={"/proposal/create"}
       >
-        New proposal
+        Create proposal
       </NavLink>
     </div>
   );

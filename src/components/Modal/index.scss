@@ -5,7 +5,7 @@
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--color-modal-overlay-background);
 }
 
 .modalWrapper {
@@ -33,6 +33,7 @@
   max-width: 440px;
   width: 100%;
   margin: 1.75rem auto;
+  border: 1px solid var(--color-border);
 
   a {
     color: inherit; /* blue colors for links too */
@@ -47,7 +48,7 @@
 }
 
 .headerContent {
-  color: var(--link-color);
+  color: var(--color-text-primary);
   font-size: x-large;
   font-weight: 600;
 }
@@ -63,10 +64,8 @@
 }
 
 .modalCloseButton {
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 1;
-  color: var(--link-color);
+  font-size: 26px;
+  font-weight: 600;
   background-color: transparent;
   cursor: pointer;
   border: none;

@@ -1,7 +1,7 @@
 import { useState } from "react";
-
 import CreateProposalActions from "./CreateProposalActions";
 import CreateProposalBodyTextArea from "./CreateProposalBodyTextArea";
+import leftArrow from '../../assets/svg/left-arrow.svg'
 
 import "./index.scss";
 
@@ -10,10 +10,17 @@ function CreateProposal() {
   const [body, setBody] = useState("");
 
   return (
-    <div className="app-page createProposal mb-2">
+    <section className="app-page createProposal mb-2">
+      <div className="createProposalHeader">
+        <a href="#/" className='allProposalsLink'>
+          <img src={leftArrow} alt='Left arrow icon' />
+        </a>
+        <h2>Create Proposal</h2>
+      </div>
+
       <input
         maxLength={128}
-        className="createTitleInput mb-1"
+        className="createTitleInput"
         placeholder="Title (proposal in one sentence)"
         onChange={(e) => setTitle(e.target.value)}
         value={title}
@@ -25,7 +32,7 @@ function CreateProposal() {
         value={body}
       />
       <CreateProposalActions title={title} body={body} />
-    </div>
+    </section>
   );
 }
 
