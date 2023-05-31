@@ -66,6 +66,7 @@ button {
   --color-background-surface-reversed: #0d111c;
   --color-background-interactive: #e8ecfb;
   --color-background-module: #f5f6fc;
+  --color-background-module-1: #F5F6FCFF;
   --color-background-3: #b8c0dc;
   --color-text-secondary: #7780a0;
   --color-state-overlay-hover: #98a1c02e;
@@ -110,11 +111,14 @@ button {
   --color-read-only: rgb(44, 44, 44);
   --color-need-to-rename: #1f2d48;
   --color-inactive: #3c3c3c;
+  --color-border: #98A1C03D;
+  --color-inactive-border: rgba(152, 161, 192, 0.1);
   --color-background-outline: #1b2236;
   --color-background-surface: #0d111c;
   --color-background-surface-reversed: #ffffff;
   --color-background-interactive: #293249;
   --color-background-module: #131a2a;
+  --color-background-module-1: #131A2AFF;
   --color-background-3: #404a67;
   --color-text-secondary: #7780a0;
   --color-state-overlay-hover: #98a1c02e;
@@ -235,15 +239,15 @@ a.link {
   background-color: var(--border-color);
   border: 1px solid transparent;
   border-radius: 20px;
-  padding: 18px;
-  margin-bottom: 0.5rem;
-  color: var(--link-color);
+  padding: 16px;
+  color: var(--color-notice);
   font-weight: 500;
+  font-size: 16px;
   width: 100%;
   cursor: pointer;
 
   &.active {
-    color: white;
+    color: #ffffff;
     background-color: var(--color-brand);
   }
 
@@ -251,9 +255,9 @@ a.link {
     cursor: not-allowed;
   }
 
-  &:focus,
-  &:hover,
-  &:active {
+  &.active:focus,
+  &.active:hover,
+  &.active:active {
     background-color: var(--color-brand-hover);
   }
 }

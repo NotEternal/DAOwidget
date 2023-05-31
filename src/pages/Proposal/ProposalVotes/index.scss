@@ -1,7 +1,7 @@
 .voteRow {
   display: flex;
   border-top: solid 1px var(--border-color);
-  padding: 1rem;
+  padding: 8px 0;
 
   &:first-child {
     border-top: none;

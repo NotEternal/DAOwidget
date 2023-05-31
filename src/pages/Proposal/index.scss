@@ -1,6 +1,41 @@
 .proposal {
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+  max-width: 640px;
+  width: 100%;
+  background-color: var(--bg-color);
+  border: 1px solid var(--color-inactive-border);
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .allProposalsPart {
+    display: flex;
+    align-items: center;
+  }
+
+  .allProposalsPartTitle {
+    margin: 0 0 0 10px;
+    font-weight: 500;
+  }
+
+  .proposalState {
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 0.825rem;
+    font-weight: 600;
+    color: var(--color-brand);
+    border: 1px solid var(--color-brand);
+  }
+
   .proposalTitle {
-    font-size: 36px;
+    font-size: 32px;
+    margin-bottom: 0;
   }
 
   .proposalHeader {
@@ -8,11 +43,40 @@
     justify-content: space-between;
     color: var(--text-color);
     margin-bottom: 1rem;
+  }
 
-    .proposalState {
-      padding: 0.5rem;
-      border: 1px solid var(--border-color);
-      border-radius: 2rem;
+  .proposalSection {
+    margin-top: 8px;
+    border-top: 1px solid var(--color-inactive-border);
+  }
+
+  .proposalSectionTitle {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 8px 0 16px;
+  }
+
+  .proposalSectionItemsWrapper {
+    .app-widget-item {
+      margin: 0 0 8px;
     }
+
+    &.votesProgressWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+  }
+
+  .proposalSectionProgressBar {
+    padding: 1rem;
+    margin-bottom: 1%;
+    width: 49.5%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-background-module-1);
   }
 }

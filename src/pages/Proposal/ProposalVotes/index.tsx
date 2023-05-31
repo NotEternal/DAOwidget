@@ -16,7 +16,7 @@ function ProposalVotes(props: ProposalVotesType) {
   const tokenSymbol = strategies[0].params.symbol;
 
   return (
-    <div className="app-widget">
+    <div className="proposalSection">
       <div className="app-widget-header">
         Top {votes.length} of {totalVotes} votes
       </div>

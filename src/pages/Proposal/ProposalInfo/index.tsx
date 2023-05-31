@@ -29,9 +29,9 @@ function ProposalInfo(props: ProposalInfoProps) {
   return (
     <>
       {haveContent && (
-        <div className="app-widget">
-          <div className="app-widget-header">Proposal Info</div>
-          <div className="p-1">
+        <div className="proposalSection">
+          <h3 className="proposalSectionTitle">Details</h3>
+          <div className="proposalSectionItemsWrapper">
             {tokenSymbol && (
               <div className="app-widget-item">
                 <b>Token symbol: </b>

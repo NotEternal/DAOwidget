@@ -13,16 +13,16 @@ function ProposalResults(props: ProposalResultsProps) {
   const tokenSymbol = strategies[0].params.symbol;
 
   return (
-    <div className="app-widget">
-      <div className="app-widget-header">Results</div>
-      <div className="p-1">
+    <div className="proposalSection">
+      <h3 className="proposalSectionTitle">Results</h3>
+      <div className="proposalSectionItemsWrapper votesProgressWrapper">
         {choices.map((choice, i) => {
           const resultByVoteBalance = results.resultsByVoteBalance[i];
           const persentsOfChoice =
             (resultByVoteBalance / results.sumOfResultsBalance) * 100;
 
           return (
-            <div className="app-widget-item" key={i}>
+            <div className="proposalSectionProgressBar" key={i}>
               {`${choice} - ${resultByVoteBalance.toFixed(
                 4
               )} ${tokenSymbol} (${persentsOfChoice.toFixed(2)} %)`}

@@ -27,12 +27,12 @@ function CreateProposalActions(props: CreateProposalActionsType) {
 
   const durationOptions = [
     { value: 0, text: "Select duration" },
-    { value: 86400, text: "1d" },
-    { value: 259200, text: "3d" },
-    { value: 432000, text: "5d" },
-    { value: 604800, text: "1w" },
-    { value: 1209600, text: "2w" },
-    { value: 2419200, text: "1m" },
+    { value: 86400, text: "1 day" },
+    { value: 259200, text: "3 days" },
+    { value: 432000, text: "5 days" },
+    { value: 604800, text: "1 week" },
+    { value: 1209600, text: "2 weeks" },
+    { value: 2419200, text: "1 month" },
   ];
 
   const handleDurationChange = (e: ChangeEvent<HTMLSelectElement>) => {

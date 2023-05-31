@@ -26,7 +26,7 @@ function Modal() {
               className="modalCloseButton"
               data-dismiss="daoModal"
               aria-label="Close"
-              onClick={(e) => onCancel(e)}
+              onClick={onCancel}
             >
               <span aria-hidden="true">&times;</span>
             </button>

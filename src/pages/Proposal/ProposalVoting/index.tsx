@@ -16,9 +16,9 @@ function ProposalVoting(props: ProposalVotesType) {
 
   return (
     <>
-      <div className="app-widget">
-        <div className="app-widget-header">Cast your vote</div>
-        <div className="p-1">
+      <div className="proposalSection">
+        <h3 className="proposalSectionTitle">Cast your vote</h3>
+        <div className="">
           <div className="mb-1">
             {choices.map((choice, i) => {
               return (

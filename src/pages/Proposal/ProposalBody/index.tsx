@@ -6,6 +6,7 @@ import { useClient } from "src/hooks/useClient";
 import { ProposalType } from "src/hooks/useProposals";
 import { Space, useSpaceList } from "src/hooks/useSpaces";
 import { Library } from "src/utils/getLibrary";
+import { ReactComponent as LeftArrow } from "src/assets/svg/left-arrow.svg";
 
 type ProposalBodyProps = {
   proposal: ProposalType;
@@ -49,10 +50,21 @@ function ProposalBody(props: ProposalBodyProps) {
 
   return (
     <div>
+      <div className='top'>
+        <div className='allProposalsPart'>
+          <a href="#/" className='allProposalsLink'>
+            <LeftArrow fill="var(--color-text-primary)" />
+          </a>
+          <h3 className='allProposalsPartTitle'>All proposals</h3>
+        </div>
+
+        {state && <span className="proposalState">{state}</span>}
+      </div>
+
       {title && <h1 className="proposalTitle">{title}</h1>}
+
       {haveHeader && (
         <div className="proposalHeader">
-          {state && <span className="proposalState floatLeft">{state}</span>}
           {showDeleteButton && (
             <button
               className="deleteButton floatRight"

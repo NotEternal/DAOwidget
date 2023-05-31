@@ -59,7 +59,6 @@ function ConnectWallet() {
         padding: "1rem",
       }}
     >
-      <span style={{ marginRight: "0.5rem" }}>Account</span>
       <ExternalLink
         link={`${NETWORK_EXPLORER_URLS[networkId]}address/${account}`}
         children={shortEVMAddress(account || "")}

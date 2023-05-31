@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CreateProposalActions from "./CreateProposalActions";
 import CreateProposalBodyTextArea from "./CreateProposalBodyTextArea";
-import leftArrow from '../../assets/svg/left-arrow.svg'
+import { ReactComponent as LeftArrow } from "src/assets/svg/left-arrow.svg";
 
 import "./index.scss";
 
@@ -13,7 +13,7 @@ function CreateProposal() {
     <section className="app-page createProposal mb-2">
       <div className="createProposalHeader">
         <a href="#/" className='allProposalsLink'>
-          <img src={leftArrow} alt='Left arrow icon' />
+          <LeftArrow fill="var(--color-text-primary)" />
         </a>
         <h2>Create Proposal</h2>
       </div>
