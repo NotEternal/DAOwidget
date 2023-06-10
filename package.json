@@ -2,7 +2,7 @@
   "name": "daofactory",
   "version": "0.1.8",
   "private": true,
-  "homepage": "https://noteternal.github.io/DAOwidget",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
