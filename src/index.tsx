@@ -15,13 +15,13 @@ window.ENS_DOMAIN = appElement?.getAttribute("data-ens") || "onout.eth";
 window.NETWORK_ID = appElement?.getAttribute("data-network") || "56";
 window.TOKEN_ADDRESS =
   appElement?.getAttribute("data-token-address") ||
-  "0x92648e4537cdfa1ee743a244465a31aa034b1ce8";
-window.TOKEN_SYMBOL = appElement?.getAttribute("data-token-symbol") || "SWAP";
+  "0x9636a568c53F40dF01cdAb64401A0b6bFaEa9095";
+window.TOKEN_SYMBOL = appElement?.getAttribute("data-token-symbol") || "MINING";
 window.TOKEN_DECIMALS = appElement?.getAttribute("data-token-decimals") || "18";
 window.COLOR_TEMPLATE =
   appElement?.getAttribute("data-color-template") || "light_template";
-window.HIDE_SERVICE_LINK = appElement?.getAttribute("data-hide-service-link") === 'true';
-window.REQUIRED_AMOUNT_TO_PUBLISH = appElement?.getAttribute("data-required-amount-to-publish") || 5;
+window.HIDE_SERVICE_LINK = true // appElement?.getAttribute("data-hide-service-link") === 'true';
+window.REQUIRED_AMOUNT_TO_PUBLISH = appElement?.getAttribute("data-required-amount-to-publish") || 50000;
 window.REQUIRED_AMOUNT_TO_VOTE = appElement?.getAttribute("data-required-amount-to-vote") || 1;
 
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName);
